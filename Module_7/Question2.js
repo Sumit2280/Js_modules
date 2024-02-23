@@ -34,9 +34,9 @@ let users = [{
 
 let result = {}
 
-function mapBy(users, first_name) {
-  let temp = users.find((user) => user.first_name == first_name);
-  result[first_name] = temp;
+function mapBy(users, firstName) {
+  let temp = users.find((user) => user.first_name == firstName);
+  result[firstName] = temp;
 }
  
 for (let user in users) {

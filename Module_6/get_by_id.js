@@ -1,4 +1,4 @@
-const arr = [{
+const users = [{
   "id": 1,
   "first_name": "Nicki",
   "email": "ncrozier0@squarespace.com",
@@ -51,13 +51,8 @@ const arr = [{
 }]
 
 function getById(id){
-  let new_obj;
-  arr.forEach((object)=>{
-    if (object.id==id){
-      new_obj=object;
-    }
-  });
-  return new_obj;
+  let resultantObject=users.find((user)=>user.id==id);
+  return resultantObject;
 }
 
-console.log(getById(2)); 
+console.log(getById(3)); 

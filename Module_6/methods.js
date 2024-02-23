@@ -19,7 +19,7 @@ console.log(findResult);
 //sort //mutate
 const sortResult=temp.sort();
 console.log(sortResult);
-// console.log(temp);
+
 
 //map //immutable
 const mapResult=temp.map((x)=>x*2);

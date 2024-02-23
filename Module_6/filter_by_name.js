@@ -1,4 +1,4 @@
-const arr = [{
+const users = [{
   "id": 1,
   "first_name": "Nicki",
   "email": "ncrozier0@squarespace.com",
@@ -50,19 +50,14 @@ const arr = [{
   "date_of_birth": "2018/09/01"
 }]
 
-function filterByName(first_name) {
-  obj_arr = [];
-  arr.forEach((object) => {
-    if (object.first_name == first_name) {
-      obj_arr.push(object);
-    }
-  });
-  return obj_arr;
+function filterByName(firstName) {
+  result = users.filter((user)=> user.first_name==firstName)
+  return result;
 }
 
 
-let first_name = "Sam";
-var result = filterByName(first_name);
+let firstName = "Sam";
+var result = filterByName(firstName);
 if (!result.length) {
   console.log("There is no any object with given first_name");
 }

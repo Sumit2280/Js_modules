@@ -1,4 +1,4 @@
-const arr = [{
+const users = [{
   "id": 1,
   "first_name": "Nicki",
   "email": "ncrozier0@squarespace.com",
@@ -50,5 +50,5 @@ const arr = [{
   "date_of_birth": "2018/09/01"
 }]
 
-const email_arr=arr.map((obj)=> obj.email);
-console.log(email_arr);
+const emails=users.map((obj)=> obj.email);
+console.log(emails);

@@ -1,4 +1,4 @@
-const arr = [{
+const users = [{
   "id": 1,
   "first_name": "Nicki",
   "email": "ncrozier0@squarespace.com",
@@ -51,6 +51,6 @@ const arr = [{
 }]
 
 
-arr.sort((a, b) => new Date(b.date_of_birth) - new Date(a.date_of_birth));
-console.log(arr);
+users.sort((a, b) => new Date(b.date_of_birth) - new Date(a.date_of_birth));
+console.log(users);
 
